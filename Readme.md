@@ -1,5 +1,10 @@
 # UpCurve - PE 2024 batch
 
+## Git repositories of participants (for assignments)
+
+- [Swathi](https://github.com/skafs123/Upcurve-pe-24)
+- [Kavya Sunki](https://github.com/kavyasunki/target-upcurve-pe-assignmets)
+
 ## Software Setup:
 
 - JDK 17 or later
