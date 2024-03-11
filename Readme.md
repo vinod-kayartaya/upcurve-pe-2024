@@ -4,6 +4,16 @@
 
 - [Swathi](https://github.com/skafs123/Upcurve-pe-24)
 - [Kavya Sunki](https://github.com/kavyasunki/target-upcurve-pe-assignmets)
+- [Nikitha Vepati](https://github.com/nikitha-14-hue/Niki-14)
+- [Prachi Patil](https://github.com/Prachi-0704/Upcurve-PE-2024-Prachi)
+- [SIRI RAJ BENDA](https://github.com/BendaSiriRaj/Upcurve_PE)
+- [Sanjana Sammeta](https://github.com/sanjana2503/TargetUpCurve)
+- [Arsheena Talath Khan](https://github.com/arsheena1463/Target_Upcurve)
+- [Sanika Nanavare](https://github.com/SanikaNanavare)
+- [Akshada Gaikwad](https://github.com/akshadargaikwad/Akshada-Gaikwad_Target-Upcurve)
+- [RASHMI PATEL](https://github.com/Rashmipatel044/target_upcurve)
+- [Christina Joseph Jyothula](https://github.com/christinajjy/target_upcurve_2024.git)
+- [Baby Vijaya Shree ](https://github.com/BabyVijayaShree/Upcurve-PE)
 
 ## Software Setup:
 
