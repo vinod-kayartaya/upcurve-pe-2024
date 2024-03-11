@@ -12,7 +12,7 @@
 - [Sanika Nanavare](https://github.com/SanikaNanavare)
 - [Akshada Gaikwad](https://github.com/akshadargaikwad/Akshada-Gaikwad_Target-Upcurve)
 - [RASHMI PATEL](https://github.com/Rashmipatel044/target_upcurve)
-- [Christina Joseph Jyothula](https://github.com/christinajjy/target_upcurve_2024.git)
+- [Christina Joseph Jyothula](https://github.com/christinajjy/target_upcurve_2024)
 - [Baby Vijaya Shree ](https://github.com/BabyVijayaShree/Upcurve-PE)
 
 ## Software Setup:
