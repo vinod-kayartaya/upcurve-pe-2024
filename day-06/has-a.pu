@@ -1,0 +1,60 @@
+@startuml
+
+
+class Employee{
+    -id: int;
+    -name: String;
+    -salary: double;
+    -department: Department;
+
+    + Employee();
+    + Employee(id: int, name: String, salary: double);
+    + getId(): int;
+    + getName(): String;
+    + getSalary(): double;
+    + getDepartment(): Department;
+    +setId(id: int): void;
+    +setName(name: String): void;
+    +setSalary(salary: double): void;
+    +setDepartment(department: Department): void;
+}
+
+class Department {
+    -id: int;
+    -name: String;
+    -location: String;
+
+    + Department();
+    + getId(): int;
+    + getName(): String;
+    + getLocation(): String;
+    +setId(id: int): void;
+    +setName(name: String): void;
+    +setLocation(location: String): void;
+    
+}
+
+Employee -o Department
+
+class Salesperson {
+    -salesTarget: double;
+    -commissionPercent: double;
+
+    +Salesperson();
+    +getSalesTarget(): double;
+    +getCommissionPercent(): double;
+    +setSalesTarget(salesTarget: double): void;
+    +setCommissionPercent(commissionPercent: double): void;
+}
+
+class Manager {
+    -projects: String[];
+
+    +Manager();
+    +getProjects(): String[];
+    +setProjects(projects: String[]);
+}
+
+Employee <|-- Salesperson
+Employee <|-- Manager
+@enduml
