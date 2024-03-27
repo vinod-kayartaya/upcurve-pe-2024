@@ -14,6 +14,8 @@
 - [RASHMI PATEL](https://github.com/Rashmipatel044/target_upcurve)
 - [Christina Joseph Jyothula](https://github.com/christinajjy/target_upcurve_2024)
 - [Baby Vijaya Shree ](https://github.com/BabyVijayaShree/Upcurve-PE)
+- [Nikitha Reddy Bollepally](https://github.com/nikitha1611/upcurve_assignments)
+- [Sattineti Annapurna](https://github.com/Sbharathiannapurna/Sattineti-annapurna)
 
 ## Software Setup:
 
@@ -107,8 +109,8 @@ To fully benefit from this course, students should have:
 
 - Understanding exceptions and error handling
 - Handling exceptions using try-catch blocks
-- Throwing and propagating exceptions
 - Multiple catch blocks and finally block
+- Throwing and propagating exceptions
 - Best practices for exception handling
 
 ### Session 8: Unit testing using JUnit
