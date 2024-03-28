@@ -1,0 +1,26 @@
+@startuml
+
+class Phone{}
+class MobilePhone{}
+class SmartPhone{}
+
+interface Camera{}
+interface AcousticDevice{}
+
+class MusicPlayer{}
+class Radio{}
+class DSLRCamera{}
+class WebCam{}
+
+Phone <|-- MobilePhone
+MobilePhone <|-- SmartPhone
+
+Camera <|.. SmartPhone
+Camera <|.. WebCam
+Camera <|.. DSLRCamera
+
+AcousticDevice <|.. SmartPhone
+AcousticDevice <|.. Radio
+AcousticDevice <|.. MusicPlayer
+
+@enduml

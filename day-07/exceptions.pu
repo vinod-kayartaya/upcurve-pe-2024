@@ -1,0 +1,22 @@
+@startuml
+
+Object <|-- Throwable
+
+Throwable <|-- Exception
+Throwable <|-- Error
+
+Exception <|-- RuntimeException
+Exception <|-- SQLException
+Exception <|-- IOException
+
+RuntimeException <|-- ArithmeticException
+RuntimeException <|-- NumberFormatException
+RuntimeException <|-- IndexOutOfBoundsException
+RuntimeException <|-- NullPointerException
+RuntimeException <|-- ClassCastException
+
+IndexOutOfBoundsException <|-- ArrayIndexOutOfBoundsException
+IOException <|-- FileNotFoundException
+IOException <|-- EOFException
+
+@enduml
