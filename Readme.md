@@ -119,8 +119,8 @@ To fully benefit from this course, students should have:
 - Introduction to JUnit
 - Setup
 - Testcases and assertions
-- Lifecycle hooks
 - Parameterized tests
+- Lifecycle hooks
 
 ### Session 9: Input-Output (IO) Operations
 
