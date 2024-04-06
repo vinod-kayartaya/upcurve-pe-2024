@@ -1,0 +1,40 @@
+@startuml
+
+interface Collection{
+    +add(E)
+    +addAll(Collection)
+    +remove(E)
+    +clear()
+    +contains(E)
+    +isEmpty()
+    +size()
+}
+
+interface List{
+    +add(index, E)
+    +addAll(index, Collection)
+    +remove(index)
+    +get(index)
+    +set(index, E)
+    +indexOf(E)
+    +subList(start, end)
+}
+
+interface Set{}
+
+Collection <|-- List
+Collection <|-- Set
+
+List <|.. ArrayList
+List <|.. LinkedList
+List <|.. Vector
+Vector <|-- Stack
+
+Set <|.. HashSet
+Set <|.. LinkedHashSet
+Set <|.. TreeSet
+Set <|.. Hashtable 
+
+interface Iterable{}
+Iterable <|-- Collection
+@enduml
