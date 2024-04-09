@@ -6,16 +6,48 @@ import java.util.*;
 
 public class ListDemo {
 
+    static class PersonAgeComparator implements  Comparator<Person>{
+        @Override
+        public int compare(Person p1, Person p2) {
+            return Integer.compare(p1.age(), p2.age());
+        }
+    }
+
     public static void main(String[] args) {
         List<Person> people = new ArrayList<>();
         people.add(new Person("Shyam", 51, 5.11));
-        people.add(new Person("Ramesh", 45, 5.7));
-        people.add(new Person("Shyam", 51, 5.11));
-        people.add(new Person("Shyam", 51, 5.11));
+        people.add(new Person("Ramesh", 45, 5.07));
+        people.add(new Person("Vinay", 46, 6.01));
+        people.add(new Person("Rohit", 42, 5.08));
 
+        System.out.println("before sorting:");
         for(var p: people){
             System.out.println(p);
         }
+
+        Comparator<Person> cmp = new PersonAgeComparator();
+        Collections.sort(people, cmp);
+
+        System.out.println("after sorting:");
+        for(var p: people){
+            System.out.println(p);
+        }
+
+        cmp = new Comparator<Person>(){
+            public int compare(Person p1, Person p2) {
+                return Double.compare(p1.height(), p2.height());
+            }
+        };
+        Collections.sort(people, cmp);
+
+        System.out.println("after sorting:");
+        for(var p: people){
+            System.out.println(p);
+        }
+
+
+
+
     }
     public static void main1(String[] args) {
         List<Integer> numbers = new ArrayList<>();

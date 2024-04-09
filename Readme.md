@@ -144,10 +144,10 @@ To fully benefit from this course, students should have:
 
 ### Session 11: Streams and Functional Interfaces
 
-- Introduction to streams in Java
-- Stream operations: filter, map, reduce
 - Working with functional interfaces
 - Lambda expressions in Java
+- Introduction to streams in Java
+- Stream operations: filter, map, reduce
 - Stream API best practices
 
 ### Session 12: More on Collections

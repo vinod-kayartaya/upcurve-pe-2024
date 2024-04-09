@@ -8,6 +8,7 @@ interface Collection{
     +contains(E)
     +isEmpty()
     +size()
+    +iterator(): Iteratator
 }
 
 interface List{
