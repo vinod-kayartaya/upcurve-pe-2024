@@ -16,6 +16,8 @@
 - [Baby Vijaya Shree ](https://github.com/BabyVijayaShree/Upcurve-PE)
 - [Nikitha Reddy Bollepally](https://github.com/nikitha1611/upcurve_assignments)
 - [Sattineti Annapurna](https://github.com/Sbharathiannapurna/Sattineti-annapurna)
+- [Gowthami Malli](https://github.com/MalliGowthami/Target-UpCurve)
+- [Jivika](https://github.com/blazingmoons/upcurve)
 
 ## Software Setup:
 

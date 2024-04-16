@@ -1,0 +1,27 @@
+#environment variables read from Java
+#Sat Apr 13 19:27:11 IST 2024
+PATH=/Users/vinod/.nvm/versions/node/v18.10.0/bin\:/Users/vinod/kotlinc/bin\:/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin\:/usr/local/mysql/bin\:/Users/vinod/apache-maven-3.9.2/bin\:/Library/Frameworks/Python.framework/Versions/3.12/bin\:/Library/Frameworks/Python.framework/Versions/3.11/bin\:/usr/local/bin\:/System/Cryptexes/App/usr/bin\:/usr/bin\:/bin\:/usr/sbin\:/sbin\:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin\:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin\:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin\:/Library/Apple/usr/bin\:/Applications/VMware Fusion.app/Contents/Public\:/usr/local/share/dotnet\:~/.dotnet/tools\:/usr/local/go/bin\:/Users/vinod/mongodb-macos-x86_64-6.0.8/bin\:/Users/vinod/mongosh-1.10.3-darwin-x64/bin
+PS1=%F{green}%d/>%F{gray} 
+MAVEN_HOME=/Users/vinod/apache-maven-3.9.2
+LOGNAME=vinod
+PWD=/Users/vinod/Desktop/upcurve-2024/day-12/workspace/jcf-misc
+PYTHONPATH=/Users/vinod/Desktop/redbus/python/day1/\:
+NVM_CD_FLAGS=-q
+SHELL=/bin/zsh
+OLDPWD=/
+TMPDIR=/var/folders/7x/7pmb0j1171s0xk4sc55r58kr0000gn/T/
+XPC_FLAGS=0x0
+__CF_USER_TEXT_ENCODING=0x1F5\:0x0\:0x0
+LC_CTYPE=en_IN.UTF-8
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
+COMMAND_MODE=unix2003
+NVM_INC=/Users/vinod/.nvm/versions/node/v18.10.0/include/node
+XPC_SERVICE_NAME=application.com.jetbrains.intellij.ce.58146.58844
+__CFBundleIdentifier=com.jetbrains.intellij.ce
+NVM_DIR=/Users/vinod/.nvm
+USER=vinod
+CLASSPATH=.\:/Users/vinod/.m2/repository/ch/qos/reload4j/reload4j/1.2.22/reload4j-1.2.22.jar\:/Users/vinod/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar\:/Users/vinod/.m2/repository/org/slf4j/slf4j-reload4j/2.0.12/slf4j-reload4j-2.0.12.jar
+JAVA_MAIN_CLASS_85909=com.targetindia.programs.ReadSystemProps
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.F5JBKoiYG1/Listeners
+NVM_BIN=/Users/vinod/.nvm/versions/node/v18.10.0/bin
+HOME=/Users/vinod

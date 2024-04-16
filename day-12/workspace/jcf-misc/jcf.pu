@@ -1,0 +1,39 @@
+@startuml
+
+interface Map<K, V>{
+    +size(): int
+    +isEmpty(): boolean
+    +put(key: K, value: V): V
+    +get(key: K): V
+    +containsKey(key: K): boolean
+    +containsValue(value: V): boolean
+    +keySet(): Set<K>
+    +entrySet(): Set<Entry<K, V>>
+    +values(): Collection<V>
+    +remove(key: K): V
+}
+
+abstract class AbstractMap{}
+Map <|.. AbstractMap
+
+Map <|.. HashMap
+Map <|.. LinkedHashMap
+
+AbstractMap <|-- HashMap
+HashMap <|-- LinkedHashMap
+
+interface SortedMap{}
+interface NavigatableMap{}
+
+Map <|-- SortedMap
+SortedMap <|-- NavigatableMap
+
+NavigatableMap <|.. TreeMap
+AbstractMap <|-- TreeMap
+
+Map <|.. Hashtable
+
+Dictionary <|-- Hashtable
+Hashtable <|-- Properties
+
+@enduml
