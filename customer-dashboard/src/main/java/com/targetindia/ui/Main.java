@@ -81,7 +81,10 @@ public class Main {
     private void listAll() {
         // TODO: get all customers from service and print in a tabular format
         var list = service.getAllCustomers();
-        printCustomerListAsTable(list);
+        // printCustomerListAsTable(list);
+        for(var c:list){
+            System.out.println(c);
+        }
     }
 
     void printCustomerListAsTable(List<Customer> customers){

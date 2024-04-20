@@ -2,7 +2,7 @@ package com.targetindia.service;
 
 import com.targetindia.dao.CustomerDao;
 import com.targetindia.dao.DaoException;
-import com.targetindia.dao.SerializationCustomerDao;
+import com.targetindia.dao.DaoFactory;
 import com.targetindia.model.Customer;
 
 import java.util.List;
@@ -12,7 +12,7 @@ public class CustomerService {
     final CustomerDao dao;
 
     public CustomerService() {
-        dao = new SerializationCustomerDao(); // right now this tight coupling; need to change;
+        dao = DaoFactory.getCustomerDao();
     }
 
     public Customer addNewCustomer(Customer customer) throws ServiceException {
