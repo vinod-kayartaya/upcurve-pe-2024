@@ -3,6 +3,7 @@ package com.targetindia.dao;
 import com.targetindia.model.Customer;
 import com.targetindia.utils.JpaUtil;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.NoResultException;
 import org.hibernate.HibernateException;
 
 import java.util.List;
@@ -60,12 +61,11 @@ public class JpaCustomerDao implements CustomerDao {
 
     @Override
     public void delete(String id) throws DaoException {
-        var customer = findById(id);
-        if (customer == null) {
-            throw new DaoException("customer not found for given id");
-        }
-
         try (EntityManager em = JpaUtil.createEntityManager()) {
+            var customer = em.find(Customer.class, id);
+            if (customer == null) {
+                throw new DaoException("customer not found for given id");
+            }
             var tx = em.getTransaction();
             tx.begin();
             try {
@@ -82,7 +82,14 @@ public class JpaCustomerDao implements CustomerDao {
 
     @Override
     public List<Customer> findAll() throws DaoException {
-        return null;
+        var qlString = "from Customer";
+        try (EntityManager em = JpaUtil.createEntityManager()) {
+            var qry = em.createQuery(qlString, Customer.class);
+            return qry.getResultList();
+        } // em.close() called here
+        catch (NoResultException e) {
+            throw new DaoException(e);
+        }
     }
 
     @Override
@@ -92,7 +99,18 @@ public class JpaCustomerDao implements CustomerDao {
 
     @Override
     public Customer findByEmail(String email) throws DaoException {
-        return null;
+        var qlString = "from Customer where email=?1";
+        try (EntityManager em = JpaUtil.createEntityManager()) {
+            var qry = em.createQuery(qlString, Customer.class);
+            qry.setParameter(1, email);
+            return qry.getSingleResult();
+        } // em.close() called here
+        catch (NoResultException e) {
+            return null;
+        }
+        catch(Exception e){
+            throw new DaoException(e);
+        }
     }
 
     @Override

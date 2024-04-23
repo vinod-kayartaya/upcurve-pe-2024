@@ -182,12 +182,12 @@ To fully benefit from this course, students should have:
 - Basic terminologies: Data, Data Structures, Algorithms
 - Characteristics of good algorithms
 - Big O notation and time complexity analysis
+- Review of arrays: Declaration, Initialization, Accessing elements, Insertion, Deletion, Searching
+- Advantages and limitations of arrays
 - Introduction to different types of data structures: Arrays, Linked Lists, Stacks, Queues
 
 ### Session 16: Arrays and Linked Lists
 
-- Review of arrays: Declaration, Initialization, Accessing elements, Insertion, Deletion, Searching
-- Advantages and limitations of arrays
 - Introduction to Linked Lists: Singly Linked Lists, Doubly Linked Lists
 - Operations on Linked Lists: Insertion, Deletion, Searching
 - Comparison between arrays and linked lists

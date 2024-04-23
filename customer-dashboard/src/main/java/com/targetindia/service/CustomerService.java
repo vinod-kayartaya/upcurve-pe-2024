@@ -41,4 +41,31 @@ public class CustomerService {
         }
     }
 
+    public void deleteCustomer(String email) throws ServiceException {
+        var customer = dao.findByEmail(email);
+        if (customer == null) {
+            throw new ServiceException("No customer found for this email");
+        }
+        try {
+            dao.delete(customer.getId());
+        } catch (DaoException e) {
+            throw new ServiceException(e);
+        }
+    }
+
+    public Customer getCustomerByEmail(String email) throws ServiceException {
+        try {
+            return dao.findByEmail(email);
+        } catch (DaoException e) {
+            throw new ServiceException(e);
+        }
+    }
+
+    public void updateCustomer(Customer customer)throws ServiceException {
+        try {
+            dao.update(customer);
+        } catch (DaoException e) {
+            throw new ServiceException(e);
+        }
+    }
 }

@@ -36,12 +36,66 @@ public class Main {
                 case 4:
                 case 5:
                 case 6:
+                    break;
                 case 7:
+                    updateCustomerData();
+                    break;
                 case 8:
+                    deleteCustomer();
                     break;
                 default:
                     System.out.println("Invalid choice. Please retry.");
             }
+        }
+    }
+
+    private void updateCustomerData() {
+        var email = KeyboardUtil.getString("Enter customer email to delete: ");
+        try {
+            Customer customer = service.getCustomerByEmail(email);
+            if (customer == null) {
+                System.out.println("No customer data found for this email!");
+                return;
+            }
+
+            System.out.println("Customer data found. Please enter update information: ");
+            String input;
+            input = KeyboardUtil.getString("Name          : (" + customer.getName() + ") ");
+            if (!input.isBlank()) {
+                customer.setName(input);
+            }
+
+            input = KeyboardUtil.getString("Email         : (" + customer.getEmail() + ") ");
+            if (!input.isBlank()) {
+                customer.setEmail(input);
+            }
+
+            input = KeyboardUtil.getString("Phone         : (" + customer.getPhone() + ") ");
+            if (!input.isBlank()) {
+                customer.setPhone(input);
+            }
+
+            input = KeyboardUtil.getString("City          : (" + customer.getCity() + ") ");
+            if (!input.isBlank()) {
+                customer.setCity(input);
+            }
+
+            service.updateCustomer(customer);
+            System.out.println("Customer data updated successfully!");
+
+        } catch (ServiceException e) {
+            log.warn("error while updating customer", e);
+            System.out.println("Couldn't update the customer. " + e.getMessage());
+        }
+    }
+
+    private void deleteCustomer() {
+        var email = KeyboardUtil.getString("Enter customer email to delete: ");
+        try {
+            service.deleteCustomer(email);
+        } catch (ServiceException e) {
+            log.warn("error while deleting customer", e);
+            System.out.println("Couldn't delete the customer. " + e.getMessage());
         }
     }
 
@@ -82,12 +136,12 @@ public class Main {
         // TODO: get all customers from service and print in a tabular format
         var list = service.getAllCustomers();
         // printCustomerListAsTable(list);
-        for(var c:list){
+        for (var c : list) {
             System.out.println(c);
         }
     }
 
-    void printCustomerListAsTable(List<Customer> customers){
+    void printCustomerListAsTable(List<Customer> customers) {
         // TODO: display the customer data in a tabular format as in MYSQL CLI output
     }
 
