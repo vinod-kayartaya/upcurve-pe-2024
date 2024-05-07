@@ -149,7 +149,7 @@ The worst-case time complexity of bubble sort is O(n^2), where n is the number o
 
 ### Selection Sort:
 
-Selection sort is another simple comparison-based sorting algorithm. It divides the input array into two parts: the sorted and the unsorted subarray. The algorithm repeatedly selects the smallest (or largest) element from the unsorted subarray and moves it to the beginning of the sorted subarray. This process continues until the entire array is sorted.
+Selection sort is another simple comparison-based sorting algorithm. It divides the input array into two parts: the sorted and the unsorted subarray. The algorithm repeatedly selects the smallest (or largest) element from the unsorted subarray and moves it to the beginning of the unsorted subarray. This process continues until the entire array is sorted.
 
 #### Algorithm:
 
