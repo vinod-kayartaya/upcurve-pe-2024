@@ -1,0 +1,9 @@
+https://www.omdbapi.com/?apikey=aa9e49f&s=iron
+
+
+###
+
+GET /?apikey=aa9e49f&s=iron
+Host: www.omdbapi.com
+Accept: application/json
+
