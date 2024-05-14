@@ -345,4 +345,4 @@ In summary, status codes and headers are integral parts of the HTTP protocol and
 
 ## Demonstration: Basic CRUD Operations using RESTful APIs
 
-![Check this page](./demo.rest)
+[Check this page](./demo.rest)
