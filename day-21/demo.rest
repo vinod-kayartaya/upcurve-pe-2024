@@ -1,0 +1,86 @@
+@host_name=54.252.141.227:8080
+###
+http://{{host_name}}/api/contacts
+
+### RFC 2616 format for sending HTTP request
+
+GET /api/contacts HTTP/1.1
+Accept: application/json
+Host: {{host_name}}
+
+###
+
+GET /api/contacts HTTP/1.1
+Accept: application/xml
+Host: {{host_name}}
+
+###
+GET /api/contacts HTTP/1.1
+Accept: text/plain
+Host: {{host_name}}
+
+###
+GET /api/contacts/9905ef95-34f2-4dd6-8935-3320c1fd4a18 HTTP/1.1
+Accept: text/plain
+Host: {{host_name}}
+
+###
+GET /api/contacts/9905ef95-34f2-4dd6-8935-3320c1fd4a18 HTTP/1.1
+Accept: application/json
+Host: {{host_name}}
+
+###
+GET /api/contacts/9905ef95-34f2-4dd6-8935-3320c1fd4a18 HTTP/1.1
+Accept: application/xml
+Host: {{host_name}}
+
+###
+
+POST /api/contacts
+Host: {{host_name}}
+Content-Type: application/json
+Accept: application/xml
+
+{
+    "firstname": "Vinod",
+    "email": "vinod@xmpl.com",
+    "phone": "9731424000"
+}
+
+###
+
+GET /api/contacts/41b23cf4-bb58-4816-8522-5075e34d95b1
+Host: {{host_name}}
+Accept: application/json
+
+###
+
+PUT /api/contacts/5ac5849e-4047-4192-8f63-6870e44aa108
+Host: {{host_name}}
+Accept: application/json
+Content-Type: application/json
+
+{
+    "city": "Bangalore"
+}
+
+###
+
+PATCH /api/contacts/5ac5849e-4047-4192-8f63-6870e44aa108
+Host: {{host_name}}
+Accept: application/json
+Content-Type: application/json
+
+{
+    "id": "adasdasdasdasdasdasd",
+    "gender": "Male"
+}
+
+###
+
+DELETE /api/contacts/5ac5849e-4047-4192-8f63-6870e44aa108
+Host: {{host_name}}
+Accept: application/xml
+
+###
+
