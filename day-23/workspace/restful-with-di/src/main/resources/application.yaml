@@ -1,0 +1,11 @@
+spring:
+  banner:
+    location: banner.txt
+  profiles:
+    active: dev
+  application:
+    name: restful service with dependency injection
+
+application:
+  title: CustomerService
+  version: 0.0.1-SNAPSHOT
