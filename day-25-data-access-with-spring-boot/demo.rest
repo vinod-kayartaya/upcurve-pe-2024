@@ -1,0 +1,39 @@
+@HOST=localhost:8080
+
+###
+
+GET /api/categories
+Host: {{HOST}}
+Accept: application/json
+
+###
+
+GET /api/categories/3
+Host: {{HOST}}
+Accept: application/json
+
+###
+
+GET /api/categories/34
+Host: {{HOST}}
+Accept: application/json
+
+###
+
+GET /api/categories
+Host: {{HOST}}
+Accept: application/xml
+
+###
+
+GET /api/categories/3
+Host: {{HOST}}
+Accept: application/xml
+
+###
+
+GET /api/categories/34
+Host: {{HOST}}
+Accept: application/xml
+
+###

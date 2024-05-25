@@ -34,7 +34,7 @@ public class CustomerService {
     private List<Customer> customers;
 
     public CustomerService() {
-        log.debug("CustomerService instantiated");
+        log.debug("CustomerService class got instantiated");
         customers = new ArrayList<>();
         customers.add(new Customer("8bec3fb4-ae9e-423e-95c1-aef2d6ddd093", "Vinod Kumar", "vinod@vinod.co", "9731424784", "Bangalore"));
         customers.add(new Customer("0eb31b3d-dde3-4138-9c6e-124fe7264278", "Shyam Sundar", "shyam@xmpl.com", "9730004784", "Shivamogga"));

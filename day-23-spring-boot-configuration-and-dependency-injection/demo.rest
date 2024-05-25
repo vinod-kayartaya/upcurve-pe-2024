@@ -1,21 +1,37 @@
 
+@PORT_NUM=6789
+###
 GET /api/customers
-Host: localhost:5678
+Host: localhost:{{PORT_NUM}}
+Accept: application/json
+###
+GET /api/customers
+Host: localhost:{{PORT_NUM}}
+Accept: application/xml
+
+###
+GET /api/customers/0eb31b3d-dde3-4138-9c6e-124fe7264278
+Host: localhost:{{PORT_NUM}}
 Accept: application/json
 
 ###
 GET /api/customers/0eb31b3d-dde3-4138-9c6e-124fe7264278
-Host: localhost:5678
-Accept: application/json
+Host: localhost:{{PORT_NUM}}
+Accept: application/xml
+
+###
+GET /api/customers/0eb31b3d-dde3-4138-9c6e-124fe7264278
+Host: localhost:{{PORT_NUM}}
+Accept: text/plain
 
 ###
 GET /api/customers/0eb31b3d-dde3-4138-9c6e-124fe7264000
-Host: localhost:5678
+Host: localhost:{{PORT_NUM}}
 Accept: application/json
 
 ###
 POST /api/customers
-Host: localhost:5678
+Host: localhost:{{PORT_NUM}}
 Accept: application/json
 Content-Type: application/json
 
@@ -41,7 +57,7 @@ Content-Type: application/json
 ###
 
 GET /api/customers/9e25b493-b764-46ee-a411-f413f1ee3973
-Host: localhost:5678
+Host: localhost:{{PORT_NUM}}
 Accept: application/json
 
 
@@ -49,12 +65,12 @@ Accept: application/json
 
 ###
 GET /api/customers
-Host: localhost:5678
+Host: localhost:{{PORT_NUM}}
 Accept: application/json
 
 ### with put request, you have to supply entire object with some modification
 PUT /api/customers/0eb31b3d-dde3-4138-9c6e-124fe7264278
-Host: localhost:5678
+Host: localhost:{{PORT_NUM}}
 Accept: application/json
 Content-Type: application/json
 
@@ -67,7 +83,7 @@ Content-Type: application/json
 
 ### with patch, you can send only those fields that need to be updated
 PATCH /api/customers/0eb31b3d-dde3-4138-9c6e-124fe7264278
-Host: localhost:5678
+Host: localhost:{{PORT_NUM}}
 Accept: application/json
 Content-Type: application/json
 
@@ -77,5 +93,5 @@ Content-Type: application/json
 
 ### 
 DELETE /api/customers/8bec3fb4-ae9e-423e-95c1-aef2d6ddd093
-Host: localhost:5678
+Host: localhost:{{PORT_NUM}}
 Accept: application/json

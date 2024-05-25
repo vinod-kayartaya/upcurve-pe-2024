@@ -1,10 +1,12 @@
 package com.targetindia.controller;
 
 import com.targetindia.model.Customer;
+import com.targetindia.model.CustomerList;
 import com.targetindia.service.CustomerService;
 import com.targetindia.service.ServiceException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,13 +21,19 @@ public class CustomerController {
     @Autowired
     private CustomerService service; // dependency
 
-    @GetMapping(produces = "application/json")
-    public List<Customer> handleGetAll() {
-        return service.getAllCustomers();
+    public CustomerController() {
+        log.debug("CustomerController class got instantiated");
     }
 
-    @GetMapping(path = "/{id}", produces = "application/json")
-    public ResponseEntity handleGetOne(@PathVariable String id) {
+    @GetMapping(produces = {"application/json", "application/xml"})
+    public CustomerList handleGetAll() {
+        CustomerList customerList = new CustomerList();
+        customerList.setCustomers(service.getAllCustomers());
+        return customerList;
+    }
+
+    @GetMapping(path = "/{id}", produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
+    public ResponseEntity handleGetOneAsJson(@PathVariable String id) {
         Customer customer = service.getCustomerById(id);
         if (customer == null) {
             return error(404, "no customer found for id " + id);
