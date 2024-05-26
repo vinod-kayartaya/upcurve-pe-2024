@@ -1,6 +1,7 @@
 package com.targetindia.controller;
 
 import com.targetindia.entity.Category;
+import com.targetindia.entity.CategoryList;
 import com.targetindia.model.ErrorResponse;
 import com.targetindia.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +30,6 @@ public class CategoryController {
 
     @GetMapping(produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity handleGetAll(){
-        return ResponseEntity.ok(service.getAllCategories());
+        return ResponseEntity.ok(new CategoryList(service.getAllCategories()));
     }
 }
