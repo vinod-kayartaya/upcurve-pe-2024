@@ -1,0 +1,25 @@
+@host=localhost:8080
+###
+
+POST /api/customers
+Host: {{host}}
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "V",
+    "city": "Bengaluru",
+    "email": "vinod@vinod.co",
+    "phone": "9731424784"
+}
+###
+
+POST /api/customers
+Host: {{host}}
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email": "ramesh@example.com",
+    "phone": "9870087699"
+}
