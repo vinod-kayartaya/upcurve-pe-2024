@@ -7,10 +7,10 @@ Accept: application/json
 Content-Type: application/json
 
 {
-    "name": "V",
-    "city": "Bengaluru",
-    "email": "vinod@vinod.co",
-    "phone": "9731424784"
+    "name": "Vishal Rao",
+    "city": "Mysuru",
+    "email": "vishal.rao@xmpl.com",
+    "phone": "9731412345"
 }
 ###
 
@@ -23,3 +23,51 @@ Content-Type: application/json
     "email": "ramesh@example.com",
     "phone": "9870087699"
 }
+
+###
+
+GET /api/customers/a29d0aa9-d9a5-4bbf-97c5-0544f2f9df9e
+Host: {{host}}
+Accept: application/json
+
+###
+
+GET /api/customers/a29d0aa9-d9a5-4bbf-97c5-0544f2f9df9f
+Host: {{host}}
+Accept: application/json
+
+###
+
+GET /api/customers/1234
+Host: {{host}}
+Accept: application/json
+
+
+### should display first 10 records, sorted by 'name'
+
+GET /api/customers
+Host: {{host}}
+Accept: application/json
+
+### should display 10 records in the page 2 (11 to 20)
+
+GET /api/customers?page=2
+Host: {{host}}
+Accept: application/json
+
+### should display 50 records in the page 2 (51 to 100)
+
+GET /api/customers?page=2&size=50
+Host: {{host}}
+Accept: application/json
+
+### should display first 10 records, sorted by 'city'
+
+GET /api/customers?sort_by=city
+Host: {{host}}
+Accept: application/json
+### should display all customers from the given city
+
+GET /api/customers/search?city=bengaluru
+Host: {{host}}
+Accept: application/json

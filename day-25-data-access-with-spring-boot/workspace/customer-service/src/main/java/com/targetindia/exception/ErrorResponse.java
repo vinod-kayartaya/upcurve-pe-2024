@@ -7,10 +7,11 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class ErrorResponse {
-    private LocalDateTime timestamp;
+    private LocalDateTime timestamp = LocalDateTime.now();
     private String message;
-    private String details;
+
+    public ErrorResponse(String message) {
+        this.message = message;
+    }
 }
