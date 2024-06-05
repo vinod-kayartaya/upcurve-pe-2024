@@ -267,24 +267,7 @@ To fully benefit from this course, students should have:
 - Working with repositories and entities
 - Transaction management in Spring Boot
 
-### Session 26: Security in Spring Boot Applications
-
-- Introduction to Spring Security
-- Authentication and authorization in Spring Boot
-- Implementing security features (login, logout, session management)
-- Securing RESTful APIs
-- Role-based access control
-
-### Session 27: Advanced Topics in Spring Boot
-
-- Introduction to Spring Boot Actuator
-- Monitoring and managing Spring Boot applications
-- Spring Boot Profiles
-- Spring Boot Testing
-- Best practices and tips for developing Spring Boot applications
-- Q&A and discussion on real-world applications of Spring Boot
-
-### Session 28: Introduction to React
+### Session 26: Introduction to React
 
 - Introduction to React
 - Creating a new React project with Create React App
@@ -296,7 +279,7 @@ To fully benefit from this course, students should have:
 - Updating state
 - Passing props between components
 
-### Session 29: React Fundamentals
+### Session 27: React Fundamentals
 
 - Event handling in React
 - Using conditional statements in JSX
@@ -308,7 +291,7 @@ To fully benefit from this course, students should have:
 - Handling forms in React
 - Controlled components vs. uncontrolled components
 
-### Session 30: Advanced React Concepts
+### Session 28: Advanced React Concepts
 
 - Understanding React component lifecycle
 - Using lifecycle methods such as componentDidMount, componentDidUpdate, componentWillUnmount, etc.
@@ -317,3 +300,20 @@ To fully benefit from this course, students should have:
 - Introduction to React Router
 - Setting up React Router
 - Basic routing with Route component
+
+### Session 29: Security in Spring Boot Applications
+
+- Introduction to Spring Security
+- Authentication and authorization in Spring Boot
+- Implementing security features (login, logout, session management)
+- Securing RESTful APIs
+- Role-based access control
+
+### Session 30: Advanced Topics in Spring Boot
+
+- Introduction to Spring Boot Actuator
+- Monitoring and managing Spring Boot applications
+- Spring Boot Profiles
+- Spring Boot Testing
+- Best practices and tips for developing Spring Boot applications
+- Q&A and discussion on real-world applications of Spring Boot
