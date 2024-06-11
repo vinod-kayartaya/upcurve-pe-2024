@@ -1,0 +1,31 @@
+@category_service_host=localhost:8080
+@product_service_host=localhost:8081
+
+###
+
+GET /api/categories
+Host: {{category_service_host}}
+Accept: application/json
+
+###
+
+GET /api/categories/2
+Host: {{category_service_host}}
+Accept: application/json
+
+###
+
+GET /api/categories/22
+Host: {{category_service_host}}
+Accept: application/json
+
+###
+
+GET /api/categories/1/picture
+Host: {{category_service_host}}
+
+###
+
+GET /api/products/for-category/3
+Host: {{product_service_host}}
+Accept: application/json

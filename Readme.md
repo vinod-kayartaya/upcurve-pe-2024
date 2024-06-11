@@ -294,26 +294,26 @@ To fully benefit from this course, students should have:
 ### Session 28: Advanced React Concepts
 
 - Understanding React component lifecycle
-- Using lifecycle methods such as componentDidMount, componentDidUpdate, componentWillUnmount, etc.
+- Using lifecycle methods
 - Introduction to React Hooks
 - useState, useEffect, and other built-in hooks
 - Introduction to React Router
 - Setting up React Router
 - Basic routing with Route component
 
-### Session 29: Security in Spring Boot Applications
+### Session 29: Advanced Topics in Spring Boot
+
+- Introduction to Spring Boot Actuator
+- Monitoring and managing Spring Boot applications
+- Spring Boot Profiles
+- Spring Boot Testing
+
+### Session 30: Security in Spring Boot Applications
 
 - Introduction to Spring Security
 - Authentication and authorization in Spring Boot
 - Implementing security features (login, logout, session management)
 - Securing RESTful APIs
 - Role-based access control
-
-### Session 30: Advanced Topics in Spring Boot
-
-- Introduction to Spring Boot Actuator
-- Monitoring and managing Spring Boot applications
-- Spring Boot Profiles
-- Spring Boot Testing
 - Best practices and tips for developing Spring Boot applications
 - Q&A and discussion on real-world applications of Spring Boot
