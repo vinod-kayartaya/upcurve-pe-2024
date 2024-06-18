@@ -1,0 +1,68 @@
+services:
+  eureka-service:
+    build:
+      context: ./eureka-service
+      dockerfile: Dockerfile
+    ports:
+      - "8761:8761"
+    networks:
+      - spring-boot-network
+
+  category-service:
+    build:
+      context: ./category-service
+      dockerfile: Dockerfile
+    networks:
+      - spring-boot-network
+    environment:
+      EUREKA_SERVER_HOST: eureka-service
+      EUREKA_SERVER_PORT: 8761
+      DB_HOST: 192.168.1.23
+    depends_on:
+      - eureka-service
+
+  product-service:
+    build:
+      context: ./product-service
+      dockerfile: Dockerfile
+    networks:
+      - spring-boot-network
+    environment:
+      EUREKA_SERVER_HOST: eureka-service
+      EUREKA_SERVER_PORT: 8761
+      DB_HOST: 192.168.1.23
+      CATEGORY_SERVICE_HOST: category-service
+      SUPPLIER_SERVICE_HOST: supplier-service
+    depends_on:
+      - eureka-service
+
+  supplier-service:
+    build:
+      context: ./supplier-service
+      dockerfile: Dockerfile
+    networks:
+      - spring-boot-network
+    environment:
+      EUREKA_SERVER_HOST: eureka-service
+      EUREKA_SERVER_PORT: 8761
+      DB_HOST: 192.168.1.23
+    depends_on:
+      - eureka-service
+
+  gateway-service:
+    build:
+      context: ./gateway-service
+      dockerfile: Dockerfile
+    networks:
+      - spring-boot-network
+    environment:
+      EUREKA_SERVER_HOST: eureka-service
+      EUREKA_SERVER_PORT: 8761
+      DB_HOST: 192.168.1.23
+    depends_on:
+      - eureka-service
+    ports:
+      - "8080:8080"
+networks:
+  spring-boot-network:
+    driver: bridge
